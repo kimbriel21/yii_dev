@@ -5,5 +5,7 @@
  * Date: 27/10/2020
  * Time: 12:10 PM
  */
-
-echo abs(1-1);
+$renderPageTimeStamp = new DateTime();
+echo "ResponseTimeStamp = " . $timeZoneResponse["timeStamp"] . "</br>";
+echo "PageLoadTimeStamp = " . $renderPageTimeStamp->getTimestamp() . "</br>";
+echo "time difference = " . abs($timeZoneResponse["timeStamp"] - $renderPageTimeStamp->getTimestamp());
