@@ -5,7 +5,11 @@
  * Date: 27/10/2020
  * Time: 12:10 PM
  */
+$this->pageTitle=Yii::app()->name;
 $renderPageTimeStamp = new DateTime();
-echo "ResponseTimeStamp = " . $timeZoneResponse["timeStamp"] . "</br>";
-echo "PageLoadTimeStamp = " . $renderPageTimeStamp->getTimestamp() . "</br>";
-echo "time difference = " . abs($timeZoneResponse["timeStamp"] - $renderPageTimeStamp->getTimestamp());
+?>
+
+<?php echo CHtml::encode("ResponseTimeStamp = " . $timeZoneResponse["timeStamp"] ) . "</br>"; ?>
+<?php echo CHtml::encode("PageLoadTimeStamp = " . $renderPageTimeStamp->getTimestamp() ) . "</br>"; ?>
+<?php echo CHtml::encode("time difference = " . abs($timeZoneResponse["timeStamp"] - $renderPageTimeStamp->getTimestamp())); ?>
+
