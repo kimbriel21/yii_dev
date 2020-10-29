@@ -824,3 +824,225 @@ Stack trace:
 #4 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
 #5 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CWebApplication->run()
 REQUEST_URI=/index.php?r=TimeZone
+2020/10/27 09:25:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "TimeZone?location=".' in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('TimeZone?locati...')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('TimeZone?locati...')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('stubs/StubTimeZ...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=stubs%2FStubTimeZone%2FTimeZone%3Flocation%3D&timestamp=&key=example+key
+---
+2020/10/27 09:25:31 [error] [php] Illegal string offset 'timestamp' (C:\xampp\htdocs\framework\devyiitestdrive\protected\spi\impl\GoogleTimeZoneSpiImpl.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(19): TimeZoneServiceImpl->getLocationTimeStamp()
+#1 unknown(0): TimeZoneController->ActionIndex()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\CController.php(286): TimeZoneController->runAction()
+#6 C:\xampp\htdocs\framework\web\CController.php(265): TimeZoneController->runActionWithFilters()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): TimeZoneController->run()
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=TimeZone
+2020/10/27 09:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "TimeZone?location=".' in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('TimeZone?locati...')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('TimeZone?locati...')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('stubs/StubTimeZ...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=stubs%2FStubTimeZone%2FTimeZone%3Flocation%3D&timestamp=&key=example+key
+---
+2020/10/27 09:33:09 [error] [php] Attempt to assign property of non-object (C:\xampp\htdocs\framework\devyiitestdrive\protected\spi\impl\GoogleTimeZoneSpiImpl.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(19): TimeZoneServiceImpl->getLocationTimeStamp()
+#1 unknown(0): TimeZoneController->ActionIndex()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\CController.php(286): TimeZoneController->runAction()
+#6 C:\xampp\htdocs\framework\web\CController.php(265): TimeZoneController->runActionWithFilters()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): TimeZoneController->run()
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=TimeZone
+2020/10/27 09:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "TimeZone?location=".' in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('TimeZone?locati...')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('TimeZone?locati...')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('stubs/StubTimeZ...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=stubs%2FStubTimeZone%2FTimeZone%3Flocation%3D&timestamp=&key=example+key
+---
+2020/10/27 09:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "TimeZone?location=".' in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('TimeZone?locati...')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('TimeZone?locati...')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('stubs/StubTimeZ...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=stubs%2FStubTimeZone%2FTimeZone%3Flocation%3D&timestamp=&key=example+key
+---
+2020/10/27 09:46:07 [error] [php] Illegal string offset 'timeStamp' (C:\xampp\htdocs\framework\devyiitestdrive\protected\spi\impl\GoogleTimeZoneSpiImpl.php:31)
+Stack trace:
+#0 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(19): TimeZoneServiceImpl->getLocationTimeStamp()
+#1 unknown(0): TimeZoneController->ActionIndex()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\CController.php(286): TimeZoneController->runAction()
+#6 C:\xampp\htdocs\framework\web\CController.php(265): TimeZoneController->runActionWithFilters()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): TimeZoneController->run()
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=TimeZone
+2020/10/27 09:52:38 [error] [exception.CException] exception 'CException' with message 'TimeZoneController cannot find the requested view "timezone".' in C:\xampp\htdocs\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(22): CController->renderPartial('timezone', Array)
+#1 [internal function]: TimeZoneController->ActionIndex(NULL, NULL)
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(TimeZoneController), Array)
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TimeZoneController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('TimeZone')
+#9 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=TimeZone
+---
+2020/10/27 09:53:21 [error] [exception.CException] exception 'CException' with message 'TimeZoneController cannot find the requested view "timezone".' in C:\xampp\htdocs\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(22): CController->renderPartial('timezone', Array)
+#1 [internal function]: TimeZoneController->ActionIndex(NULL, NULL)
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(TimeZoneController), Array)
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TimeZoneController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('TimeZone')
+#9 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=TimeZone
+---
+2020/10/27 09:56:39 [error] [exception.CException] exception 'CException' with message 'TimeZoneController cannot find the requested view "timezone".' in C:\xampp\htdocs\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(22): CController->renderPartial('timezone', Array)
+#1 [internal function]: TimeZoneController->ActionIndex(NULL, NULL)
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(TimeZoneController), Array)
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TimeZoneController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('TimeZone')
+#9 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=TimeZone
+---
+2020/10/27 09:57:11 [error] [exception.CException] exception 'CException' with message 'TimeZoneController cannot find the requested view "timezone".' in C:\xampp\htdocs\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(21): CController->renderPartial('timezone', Array)
+#1 [internal function]: TimeZoneController->ActionIndex(NULL, NULL)
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(TimeZoneController), Array)
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TimeZoneController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('TimeZone')
+#9 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=TimeZone
+---
+2020/10/27 09:57:24 [error] [php] Undefined variable: arr (C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\framework\web\CController.php(286): TimeZoneController->runAction()
+#3 C:\xampp\htdocs\framework\web\CController.php(265): TimeZoneController->runActionWithFilters()
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(282): TimeZoneController->run()
+#5 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=TimeZone
+2020/10/27 09:57:30 [error] [exception.CException] exception 'CException' with message 'TimeZoneController cannot find the requested view "timezone".' in C:\xampp\htdocs\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(21): CController->renderPartial('timezone')
+#1 [internal function]: TimeZoneController->ActionIndex(NULL, NULL)
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(TimeZoneController), Array)
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TimeZoneController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('TimeZone')
+#9 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=TimeZone
+---
+2020/10/27 09:57:46 [error] [exception.CException] exception 'CException' with message 'TimeZoneController cannot find the requested view "timezone".' in C:\xampp\htdocs\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(785): CController->renderPartial('timezone', NULL, true)
+#1 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(21): CController->render('timezone')
+#2 [internal function]: TimeZoneController->ActionIndex(NULL, NULL)
+#3 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(TimeZoneController), Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TimeZoneController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('TimeZone')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=TimeZone
+---
+2020/10/27 10:03:24 [error] [exception.CException] exception 'CException' with message 'TimeZoneController cannot find the requested view "timezone".' in C:\xampp\htdocs\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(785): CController->renderPartial('timezone', NULL, true)
+#1 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(22): CController->render('timezone')
+#2 [internal function]: TimeZoneController->ActionIndex(NULL, NULL)
+#3 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(TimeZoneController), Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TimeZoneController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('TimeZone')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=TimeZone
+---
+2020/10/27 10:13:34 [error] [php] Undefined variable: responseTimeStamp (C:\xampp\htdocs\framework\devyiitestdrive\protected\views\timezone\timezone.php:9)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(872): TimeZoneController->renderFile()
+#1 C:\xampp\htdocs\framework\devyiitestdrive\protected\controllers\TimeZoneController.php(22): TimeZoneController->renderPartial()
+#2 unknown(0): TimeZoneController->ActionIndex()
+#3 C:\xampp\htdocs\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\framework\web\CController.php(286): TimeZoneController->runAction()
+#7 C:\xampp\htdocs\framework\web\CController.php(265): TimeZoneController->runActionWithFilters()
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): TimeZoneController->run()
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\framework\devyiitestdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=TimeZone
