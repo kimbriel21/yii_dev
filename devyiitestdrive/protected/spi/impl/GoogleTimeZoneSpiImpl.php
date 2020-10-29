@@ -15,8 +15,8 @@ class GoogleTimeZoneSpiImpl implements TimeZoneSpi
     public function getLocationTimeStamp($location, $timestamp)
     {
         $urlQueryParam = "?location=" . $location . "&timestamp=" . $timestamp . "&key=" . GoogleTimeZoneSpiImpl::$KEY;
-        $response = Yii::app()->curl->get(GoogleTimeZoneSpiImpl::$STUB_TIMEZONE_API . $urlQueryParam);
-        $response = $this->addResponseTimeStamp($response);
+        $response = Yii::app()->curl->get(GoogleTimeZoneSpiImpl::$STUB_TIMEZONE_API);
+        $response = $this->addResponseTimeStamp(CJSON::decode($response));
         return $response;
     }
 
@@ -27,7 +27,7 @@ class GoogleTimeZoneSpiImpl implements TimeZoneSpi
     public function addResponseTimeStamp($response)
     {
         $date = new DateTime();
-        $response["timestamp"] = $date->getTimestamp();
+        $response["timeStamp"] = $date->getTimestamp();
         return $response;
     }
 }
