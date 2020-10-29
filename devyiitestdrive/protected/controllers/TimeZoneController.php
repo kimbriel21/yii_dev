@@ -11,12 +11,13 @@ class TimeZoneController extends Controller
 
     function __construct()
     {
+        Parent::__construct("devyiitestdrive");
         $this->timeZoneService = new TimeZoneServiceImpl();
     }
 
     public function ActionIndex($location = null, $timezone = null){
         $response = $this->timeZoneService->getLocationTimeStamp($location, $timezone);
-        $arr = array();
+        $arr = [];
         $arr["timeZoneResponse"] = $response;
 
         $this->renderPartial("/timezone/timezone", $arr);

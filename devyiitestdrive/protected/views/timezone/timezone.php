@@ -6,6 +6,6 @@
  * Time: 12:10 PM
  */
 $renderPageTimeStamp = new DateTime();
-echo "ResponseTimeStamp = " . $timeZoneResponse["timeStamp"] . "</br>";
-echo "PageLoadTimeStamp = " . $renderPageTimeStamp->getTimestamp() . "</br>";
-echo "time difference = " . abs($timeZoneResponse["timeStamp"] - $renderPageTimeStamp->getTimestamp());
+echo CHtml::encode("ResponseTimeStamp = " . $timeZoneResponse["timeStamp"]) . "</br>";
+echo CHtml::encode("PageLoadTimeStamp = " . $renderPageTimeStamp->getTimestamp()) . "</br>";
+echo CHtml::encode("time difference = " . abs($timeZoneResponse["timeStamp"] - $renderPageTimeStamp->getTimestamp()));
